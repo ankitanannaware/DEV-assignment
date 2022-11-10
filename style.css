@@ -1,0 +1,994 @@
+@font-face {
+    font-family: Smooch-Regular;
+    src: url('./fonts/Smooch-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url('./fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: Gurajada-Regular;
+    src: url('./fonts/Gurajada-Regular.ttf');
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url('./fonts/Gurajada-Regular.ttf');
+}
+
+.header {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.nav-link.vl::after {
+    content: '|';
+    color: #FFFFFF;
+    padding-left: 15px;
+    height: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: Lato-Regular;
+}
+
+.navbar-dark .navbar-toggler {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.bg-dark {
+    background-color: #28414F !important;
+}
+
+.navbar-toggler.logo2 {
+    border: 0px solid transparent;
+}
+
+/* start of banner container */
+
+.banner {
+    background-image: url(./images/Backimg.png);
+    height: 922px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icons {
+    margin-right: 10px;
+    width: 15px;
+}
+
+.sub-header-kart {
+
+    height: 70px;
+    width: 70px;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 15px;
+    float: right;
+}
+
+.kart {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+}
+
+.logo1 {
+    height: 88px;
+    width: 280px;
+}
+
+.form-phone {
+    background: linear-gradient(107.97deg, rgba(93, 135, 158, 0.4) 0.99%, rgba(255, 255, 255, 0.1) 101.23%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2), inset 5px 5px 4px #587C9B;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 0 1.3em;
+    font-size: 16px;
+    width: 410px;
+    height: 190px;
+    position: absolute;
+    top: 372px;
+    right: 80px;
+}
+
+.form-phone .title {
+    color: #FFFFFF;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 35px;
+    font-family: Gurajada-Regular;
+    color: #FFFFFF;
+}
+
+.form-phone input {
+    width: 274px;
+    border-radius: 4px;
+    border: 1.5px solid #8c8c8c;
+    height: 40px;
+    font-weight: 600;
+    font-size: 1.1em !important;
+    padding-left: 36px !important;
+}
+
+#exampleFormControlSelect1 {
+    width: 20%;
+    display: inline-flex;
+    padding: 5px;
+}
+
+.form {
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-secondary {
+    width: 100%;
+    background: #39596A;
+}
+
+.heading {
+    position: absolute;
+    left: 140px;
+    top: 700px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 80px;
+    font-family: Gurajada-Regular;
+}
+
+.sub-heading {
+    position: absolute;
+    left: 145px;
+    top: 770px;
+    color: #FFFFFF;
+    font-family: Smooch-Regular;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 49px;
+}
+
+.main-heading::after {
+    content: '';
+    border-bottom: solid 1px #FFFFFF;
+    position: absolute;
+    width: -webkit-fill-available;
+    height: 0px;
+    left: 580px;
+    top: 795px;
+}
+
+/* end of banner container */
+
+
+/* start of allyart container */
+
+.rect-one {
+    background-color: #39596A;
+    height: 75px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.rect-one.light {
+    background-color: #4D6876;
+}
+
+.Yart-sm-text {
+    color: #FFFFFF;
+    display: inline-flex;
+    font-size: 18px;
+    font-family: Lato-Regular;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(100% - 75px);
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(23, 23, 23, 0.5);
+}
+
+.col-md-4:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: Lato-Regular;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    transition: 0.5s;
+    border-top: 12px solid #FFFFFF;
+    top: 35px;
+    left: 75%;
+}
+
+.arrow.ilk {
+    left: 67%;
+}
+
+.yarts:hover .arrow {
+    transform: rotate(180deg);
+}
+
+/* end of allyart container */
+
+/* start of teknende container */
+
+.teknende {
+    background: #E5E5E5;
+
+}
+
+.yart-rw-img {
+    padding-top: 85px;
+    padding-bottom: 120px;
+}
+
+.yart4-img {
+    width: 100%;
+    border: 1px solid #000000;
+    box-shadow: inset 0px 4px 4px rgba(120, 120, 120, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(125, 125, 125, 0.25));
+    padding: 15px;
+}
+
+.header-yart {
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+    font-family: Gurajada-Regular;
+}
+
+.sub-header.yart {
+    font-family: Smooch-Regular;
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+    color: #28414F;
+}
+
+hr {
+    border-top: 1px solid #000000;
+    margin-top: 8px;
+    margin-bottom: 60px;
+}
+
+.para-yart {
+    text-align: center;
+    font-family: Lato-Regular;
+    font-size: 28px;
+    color: #000000;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.last-p-yart {
+    text-align: center;
+    font-family: Lato-Regular;
+    font-size: 38px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.last-p-yart>b {
+    color: #3F3F3F;
+}
+
+/* End of Teknende container */
+
+/* start of nasil container */
+
+.nasil {
+    background-image: url(./images/sea.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.last-p-yart.header-nasil {
+    font-size: 50px;
+    padding-top: 2%;
+    line-height: 60px;
+    font-weight: 600;
+    font-family: Lato-Regular;
+    color: #28414F;
+}
+
+.service-card-img {
+    width: 250px;
+    height: 200px;
+}
+
+.card.nasil-card {
+    border-radius: 10px;
+}
+
+.card-h2-header {
+    color: #4D6876;
+    text-align: center;
+    font-family: Gurajada-Regular;
+    font-size: 49px;
+}
+
+.card-p-paragh {
+    font-family: Lato-Regular;
+    font-size: 22px;
+    color: #000000;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.card-footer {
+    background-color: #FFFFFF;
+    border-top: 0px solid #FFFFFF;
+    color: #4D6876;
+    float: right;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    font-family: 'Lato-Regular';
+}
+
+.arrow-right {
+    border: solid #4D6876;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg);
+    margin: -1px 5px;
+}
+
+.carousel-indicators {
+    bottom: -60px;
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #383838;
+}
+
+.carousel-indicators li.active {
+    background-color: #383838;
+}
+
+/* End of nasil container */
+
+/* start of Hizmet container */
+.hizmet {
+    background-color: #E5E5E5;
+    padding-bottom: 80px;
+}
+
+.card.br {
+    border-radius: 0px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-content {
+    padding: 5px 15px;
+    line-height: 40px;
+}
+
+.card-nametitle {
+    font-weight: 400;
+    font-size: 25px;
+    color: #6C6C6C;
+}
+
+.card-child-box {
+    background-color: #4D6876;
+    position: absolute;
+    padding: 10px 30px;
+    font-size: 30px;
+    font-family: 'Inter-Regular';
+    line-height: 36px;
+    color: #FFFFFF;
+    bottom: 92px;
+    right: 0;
+}
+
+.card-child-box-img {
+    width: 100%;
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #3C3C3C;
+}
+
+.Tümünü-btn {
+    font-size: 25px;
+    line-height: 30px;
+    font-family: Inter-Regular;
+}
+
+/* End of Hizmet container */
+
+/* start mrinalar page */
+.header-mrinalar {
+    color: #F4F4F4;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+    font-family: Lato-Regular;
+}
+
+.subheader-mrinalar {
+    font-family: Smooch-Regular;
+    font-size: 35px;
+    font-style: normal;
+    line-height: 49px;
+    font-weight: 400;
+    color: #F4F4F4;
+    text-align: center;
+}
+
+.mrinalar {
+    background: url(./images/Greyback.png), #E5E5E5;
+    background-position: top center;
+    background-size: 100% auto, cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+
+.parent-mrinalar {
+    position: relative;
+}
+
+.card-mrinalar-header {
+    padding: 0px 30px 0px 10px;
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 600;
+    font-family: 'Lato-Regular';
+}
+
+.card.mrinalar-card {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    width: 80%;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    border-radius: 0px;
+}
+
+.btn-primary {
+    background: #39596A;
+    border-color: #39596A;
+}
+
+/* End of mrinalar page */
+
+/* start of Blog container */
+.blog {
+    background-color: #d7d4d4;
+    background-size: 100% auto, cover;
+    padding-bottom: 40px;
+}
+
+.header-mrinalar.hd-blog {
+    color: #4D6876;
+}
+
+.parent-blog {
+    position: relative;
+}
+
+.card-blog-header {
+    line-height: 32px;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Lato-Regular';
+
+}
+
+.card-blog-paragh-section {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'Lato-Regular';
+}
+
+.card.blog-card {
+    width: 300px;
+    height: 420px;
+    position: absolute;
+    top: 46px;
+    left: 155px;
+    border-radius: 0px;
+    box-shadow: 0px 4px 4px #01a6fc;
+}
+
+.child-yart8-img {
+    width: 300px;
+}
+
+.btn-primary.blog-btn {
+    margin-top: 100px;
+}
+
+/* End of blog container */
+
+/* start of Ortaklarimiz contianer */
+
+.Ortaklarımız {
+    background-color: #f5f5f5;
+    padding-bottom: 50px;
+}
+
+.solar-img {
+    width: 100%;
+    height: 100%;
+}
+
+.subheader-mrinalar.Ortaklarımız {
+    color: #4D6876;
+}
+
+.large-paragh {
+    position: relative;
+    width: 75%;
+    /* height: 500px; */
+    padding: 90px 60px 75px 291px;
+    background: #EDEDED;
+    float: right;
+}
+
+.paragh-Ortaklarımız {
+    font-family: Lato-Regular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 20px;
+    color: #595959;
+}
+
+.header-Ortaklarımız {
+    color: #595959;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Lato-Regular';
+}
+
+.yart10-img {
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+}
+
+.card-footer.detaylar {
+    color: #4D6876;
+    background: #EDEDED;
+}
+
+/* End of Ortaklarimiz container */
+
+/* start of mobile contianer */
+.mobile {
+    background-image: url(./images/Greyback1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.paragh-mobile {
+    font-family: Lato-Regular;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.paragh-mobile.p2 {
+    font-size: 47px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.header-mrinalar.header-mobile {
+    text-align: start;
+
+}
+
+.mobile1-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mobile2-col {
+    margin-top: 250px;
+}
+
+.mobile1-col {
+    margin-top: 100px;
+}
+
+/* End of mobile container */
+
+/* start of footer contianer */
+
+.footer {
+    background-color: #E5E5E5;
+}
+
+.header-footer {
+    font-family: Lato-Regular;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.list-unstyled {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    font-family: Lato-Regular;
+    color: #808080;
+}
+
+.footer-hr {
+    border: 0.3px solid #808080;
+}
+
+.footer-linetext {
+    font-family: Lato-Regular;
+    font-size: 16px;
+}
+.iconHere{
+float: right;
+}
+.logo-dark-img{
+width: 100%;
+}
+
+/* End of footer container */
+
+@media screen and (max-width:992px) {
+    .logo1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .logo2 {
+        display: block;
+        width: 170px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .form-phone {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .text {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .card-title,
+    .card-nametitle {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .card-title {
+        font-size: 13px;
+        line-height: 5px;
+    }
+
+}
+
+@media screen and (max-width:920px) {
+    .text {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .text {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .card-child-box {
+        padding: 0px 15px;
+        font-size: 20px;
+        bottom: 67px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .card-child-box {
+        bottom: 67px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .yart-cl-img {
+        margin-top: 90px;
+    }
+}
+
+/* Start of mrinalar container media*/
+
+@media screen and (max-width:991px) {
+    .card.mrinalar-card {
+        width: 100%;
+    }
+
+    .card-mrinalar-header {
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    .card-footer {
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    .arrow-right {
+        padding: 3px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .mrinalar {
+        background-size: 100% 290px, cover;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .parent-mrinalar {
+        margin-bottom: 50px;
+    }
+
+    .card-mrinalar-header {
+        padding: 5px 0px 10px 0px;
+        font-size: 25px;
+    }
+
+    .card-footer {
+        font-size: 18px;
+    }
+
+    .mrinalar {
+        background-size: 100% 100%, cover;
+    }
+}
+
+/* End of mrinalar container media */
+
+/* Start of Blog container media*/
+@media screen and (max-width:992px) {
+    .child-yart8-img {
+        width: 230px;
+    }
+
+    .card.blog-card {
+        width: 240px;
+        height: 320px;
+        left: 88px;
+    }
+
+    .card-blog-header {
+        font-size: 17px;
+    }
+
+    .card-blog-paragh-section {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .blog-ftr {
+        margin-top: -18px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .child-yart8-img {
+        width: 100%;
+    }
+
+    .card.blog-card {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: relative;
+    }
+
+    .card-blog-header {
+        font-size: 25px;
+    }
+
+    .card-blog-paragh-section {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .parent-blog {
+        margin-top: 40px;
+    }
+}
+
+/* End of Blog container media*/
+
+/* Start of Ortaklarımız inner side of container media*/
+
+@media screen and (max-width:1200px) {
+    .yart10-img {
+        top: 60px;
+        left: 25px;
+        width: 50%;
+    }
+
+    .large-paragh {
+        padding: 75px 60px 75px 291px;
+    }
+
+    .header-Ortaklarımız {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .paragh-Ortaklarımız {
+        line-height: 22px;
+        font-size: 15px;
+    }
+
+    .detaylar {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .yart10-img {
+        top: 55px;
+        left: -10px;
+        width: 45%;
+    }
+
+    .large-paragh {
+
+        padding: 60px 26px 25px 150px;
+    }
+
+    .header-Ortaklarımız {
+
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .paragh-Ortaklarımız {
+
+        line-height: 17px;
+        font-size: 13px;
+    }
+
+    .detaylar {
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .yart10-img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .large-paragh {
+        padding: 25px 25px 25px 25px;
+        width: 100%;
+    }
+
+    .header-Ortaklarımız {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .paragh-Ortaklarımız {
+        line-height: 23px;
+        font-size: 18px;
+    }
+
+    .detaylar {
+        font-size: 16px;
+    }
+}
+
+/* End of Ortaklarımız inner side of container media*/
+
+
+/* Start of mobile container media*/
+
+@media screen and (max-width:992px) {
+    .paragh-mobile.p2 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 55px;
+    }
+    .paragh-mobile{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .mobile2-col {
+        margin-top: 100px;
+    }
+}
+
+/* end of mobile container media */
+
+/* start of footer container media */
+
+@media screen and (max-width:992px) {
+    .logo-dark-img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:767px) {
+    .iconHere{
+        float: none;
+    }
+}

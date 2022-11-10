@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/jquery-3.6.1.slim.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+            <a class="navbar-toggler logo2" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+                aria-expanded="false">
+                <img class="logo2" src="./images/logo1.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link vl" href="#">Hizmet Teknende</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link vl" href="#">Yemek Teknende</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sipariş Teknende</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#"><img class="icons" src="/images/phone.png">0 850 441 8206</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img class="icons" src="/images/earth.png">Türkçe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img class="icons" src="/images/user.png"></a>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </nav>
+        <div class="sub-header-logo px-5 pt-4">
+            <img class="logo1" src="/images/logo1.png">
+            <div class="sub-header-kart">
+                <img class="kart" src="/images/cart.png">
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid banner">
+        <div class="form-phone">
+            <div class="title">
+                <h4 class="form-title">Giriş yap veya kayıt ol</h4>
+            </div>
+            <div class="form">
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="+91">+91</option>
+                    <option value="+92">+92</option>
+                    <option value="+93">+93</option>
+                    <option value="+94">+94</option>
+
+                </select>
+                <input type="text" placeholder="Telefon Numarası">
+
+                <button class="btn btn-secondary btn-lg mt-3" type="submit">Telefon numarası ile devam et</button>
+            </div>
+        </div>
+        <div class="main-heading">
+            <h1 class="heading">TEKNENDE HAYAT EVİNDEN DAHA RAHAT</h1>
+            <h2 class="sub-heading">Bir Sonraki Fikrinizi Deneyimleyin</h2>
+        </div>
+    </div>
+    <div class="container-fluid allyart">
+        <div class="row">
+            <div class="col-md-4 p-0 yarts">
+                <img src="./images/yart3.png" class="w-100 h-100" alt="yart3">
+                <div class="overlay">
+                    <div class="text"> Türkiye'nin ilk ve tek online motor yat ve tekne yönetim sistemiyiz ve denizciyiz
+                        sizi çok iyi anlıyoruz.</div>
+                </div>
+                <div class="rect-one">
+                    <img src="./images/cage.svg">
+                    <p class="Yart-sm-text m-2">İLK VE TEK</p>
+                    <div class="arrow ilk"></div>
+                </div>
+            </div>
+            <div class="col-md-4 p-0 yarts">
+                <img src="./images/yart1.png" class="w-100 h-100" alt="yart1">
+                <div class="overlay">
+                    <div class="text"> Türkiye'nin ilk ve tek online motor yat ve tekne yönetim sistemiyiz ve denizciyiz
+                        sizi çok iyi anlıyoruz.</div>
+                </div>
+                <div class="rect-one light">
+                    <img src="./images/hands.svg">
+                    <p class="Yart-sm-text m-2">İŞ ORTAKLARIMIZ</p>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+            <div class="col-md-4 p-0 yarts">
+                <img src="./images/yart2.png" class="w-100 h-100" alt="yart2">
+                <div class="overlay">
+                    <div class="text"> Türkiye'nin ilk ve tek online motor yat ve tekne yönetim sistemiyiz ve denizciyiz
+                        sizi çok iyi anlıyoruz.</div>
+                </div>
+                <div class="rect-one">
+                    <img src="./images/setting.svg">
+                    <p class="Yart-sm-text m-2">YALNIZ DEĞİLSİNİZ</p>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid teknende">
+        <div class="container">
+            <div class="row yart-rw-img">
+                <div class="col-lg-6 p-3">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h2 class="header-yart">TEKNENDE</h2>
+                                <h2 class="sub-header yart">Hayat</h2>
+                                <hr>
+                                <p class="para-yart">Sevimli dostlarımızın denizdeki sağlığını<br> düşünüyoruz.</p>
+                                <p class="last-p-yart">Veteriner Hizmeti şimdi<br>
+                                    <b>TEKNENDE!</b>
+                                </p>
+                            </div>
+
+                            <div class="carousel-item">
+                                <h2 class="header-yart">TEKNENDE</h2>
+                                <h2 class="sub-header yart">Hayat</h2>
+                                <hr>
+                                <p class="para-yart">Sevimli dostlarımızın denizdeki sağlığını<br> düşünüyoruz.</p>
+                                <p class="last-p-yart">Veteriner Hizmeti şimdi<br>
+                                    <b>TEKNENDE!</b>
+                                </p>
+                            </div>
+
+                            <div class="carousel-item">
+                                <h2 class="header-yart">TEKNENDE</h2>
+                                <h2 class="sub-header yart">Hayat</h2>
+                                <hr>
+                                <p class="para-yart">Sevimli dostlarımızın denizdeki sağlığını<br> düşünüyoruz.</p>
+                                <p class="last-p-yart">Veteriner Hizmeti şimdi<br>
+                                    <b>TEKNENDE!</b>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 yart-cl-img p-3">
+                    <img class="yart4-img" src="./images/yart4.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid nasil">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="last-p-yart header-nasil">Nasıl Çalışır</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 p-3">
+                    <div class="card nasil-card">
+                        <img class="service-card-img d-block mx-auto p-4" src="./images/service.png">
+                        <div class="card-body">
+                            <h2 class="card-h2-header">Hizmet Teknende</h2>
+                            <p class="card-p-paragh">İhtiyacınız olan birçok hizmette <b>Teknende</b> yanınızda!</p>
+                            <div class="card-footer">Detaylar<i class="arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <div class="card nasil-card">
+                        <img class="service-card-img d-block mx-auto p-4" src="./images/delivery.png">
+                        <div class="card-body">
+                            <h2 class="card-h2-header">Yemek Teknende</h2>
+                            <p class="card-p-paragh"><b>Teknende</b> ile yemek siparişiniz dakikalar içinde kapınızda!
+                            </p>
+                            <div class="card-footer">Detaylar<i class="arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <div class="card nasil-card">
+                        <img class="service-card-img d-block mx-auto p-4" src="./images/tempo.png">
+                        <div class="card-body">
+                            <h2 class="card-h2-header">Sipariş Teknende</h2>
+                            <p class="card-p-paragh"><b>Teknende</b> ile yemek siparişiniz dakikalar içinde kapınızda!
+                            </p>
+                            <div class="card-footer">Detaylar<i class="arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid hizmet">
+        <div class="container">
+            <h2 class="last-p-yart header-nasil">En Popüler Hizmetler</h2>
+            <div class="row py-4">
+                <div class="col-md-3 p-3">
+                    <div class="card br">
+                        <div class="card-body p-0">
+                            <div class="card-child-box">Teklif Al</div>
+                            <img class="card-child-box-img" src="./images/hizmet1.png">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-nametitle mb-0">Acenta</p>
+                            <h5 class="card-title">Acenta Hizmeti</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div class="card br">
+                        <div class="card-body p-0">
+                            <div class="card-child-box">Teklif Al</div>
+                            <img class="card-child-box-img" src="./images/hizmet2.png">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-nametitle mb-0">Kişisel Bakım</p>
+                            <h5 class="card-title">Kuaför Hizmetleri</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div class="card br">
+                        <div class="card-body p-0">
+                            <div class="card-child-box">Teklif Al</div>
+                            <img class="card-child-box-img" src="./images/hizmet3.png">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-nametitle mb-0">Güverte </p>
+                            <h5 class="card-title">Boya İşlemleri</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div class="card br">
+                        <div class="card-body p-0">
+                            <div class="card-child-box">Teklif Al</div>
+                            <img class="card-child-box-img" src="./images/hizmet4.png">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-nametitle mb-0">Dekorasyon</p>
+                            <h5 class="card-title">Branda ve Döşeme</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div class="card br">
+                        <div class="card-body p-0">
+                            <div class="card-child-box">Teklif Al</div>
+                            <img class="card-child-box-img" src="./images/hizmet5.png">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-nametitle mb-0">Acenta</p>
+                            <h5 class="card-title">Acenta Hizmeti</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div class="card br">
+                        <div class="card-body p-0">
+                            <div class="card-child-box">Teklif Al</div>
+                            <img class="card-child-box-img" src="./images/hizmet6.png">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-nametitle mb-0">Kişisel Bakım</p>
+                            <h5 class="card-title">Kuaför Hizmetleri</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div class="card br">
+                        <div class="card-body p-0">
+                            <div class="card-child-box">Teklif Al</div>
+                            <img class="card-child-box-img" src="./images/hizmet7.png">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-nametitle mb-0">Güverte </p>
+                            <h5 class="card-title">Boya İşlemleri</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div class="card br">
+                        <div class="card-body p-0">
+                            <div class="card-child-box">Teklif Al</div>
+                            <img class="card-child-box-img" src="./images/hizmet8.png">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-nametitle mb-0">Dekorasyon</p>
+                            <h5 class="card-title">Branda ve Döşeme</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary Tümünü-btn px-5 d-block mx-auto">Tümünü Gör</button>
+        </div>
+    </div>
+
+    <div class="container-fluid mrinalar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="header-mrinalar pt-4">En Popüler Marinalar</h2>
+                    <h5 class="subheader-mrinalar">En popüler marinalari keşfedin</h5>
+                </div>
+            </div>
+            <div id="marinalarCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#marinalarCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#marinalarCarousel" data-slide-to="1"></li>
+                    <li data-target="#marinalarCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row py-5">
+                            <div class="col-md-4 p-3">
+                                <div class="parent-mrinalar">
+                                    <img class="w-100" src="./images/yart5.png">
+                                    <div class="card mrinalar-card">
+                                        <div class="card-body body-mrinal p-3">
+                                            <h2 class="card-mrinalar-header">D-Marin Turgutreis</h2>
+                                            <div class="card-footer">Detaylar<i class="arrow-right"></i></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <div class="parent-mrinalar">
+                                    <img class="w-100" src="./images/yart6.png">
+                                    <div class="card mrinalar-card">
+                                        <div class="card-body body-mrinal p-3">
+                                            <h2 class="card-mrinalar-header">D-Marin Göcek</h2>
+                                            <div class="card-footer">Detaylar<i class="arrow-right"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <div class="parent-mrinalar">
+                                    <img class="w-100" src="./images/yart7.png">
+                                    <div class="card mrinalar-card">
+                                        <div class="card-body body-mrinal p-3">
+                                            <h2 class="card-mrinalar-header">D-Marin Didim</h2>
+                                            <div class="card-footer">Detaylar<i class="arrow-right"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row py-5">
+                            <div class="col-md-4 p-3">
+                                <div class="parent-mrinalar">
+                                    <img class="w-100" src="./images/yart5.png">
+                                    <div class="card mrinalar-card">
+                                        <div class="card-body body-mrinal p-3">
+                                            <h2 class="card-mrinalar-header">D-Marin Turgutreis</h2>
+                                            <div class="card-footer">Detaylar<i class="arrow-right"></i></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <div class="parent-mrinalar">
+                                    <img class="w-100" src="./images/yart6.png">
+                                    <div class="card mrinalar-card">
+                                        <div class="card-body body-mrinal p-3">
+                                            <h2 class="card-mrinalar-header">D-Marin Göcek</h2>
+                                            <div class="card-footer">Detaylar<i class="arrow-right"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <div class="parent-mrinalar">
+                                    <img class="w-100" src="./images/yart7.png">
+                                    <div class="card mrinalar-card">
+                                        <div class="card-body body-mrinal p-3">
+                                            <h2 class="card-mrinalar-header">D-Marin Didim</h2>
+                                            <div class="card-footer">Detaylar<i class="arrow-right"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row py-5">
+                            <div class="col-md-4 p-3">
+                                <div class="parent-mrinalar">
+                                    <img class="w-100" src="./images/yart5.png">
+                                    <div class="card mrinalar-card">
+                                        <div class="card-body body-mrinal p-3">
+                                            <h2 class="card-mrinalar-header">D-Marin Turgutreis</h2>
+                                            <div class="card-footer">Detaylar<i class="arrow-right"></i></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <div class="parent-mrinalar">
+                                    <img class="w-100" src="./images/yart6.png">
+                                    <div class="card mrinalar-card">
+                                        <div class="card-body body-mrinal p-3">
+                                            <h2 class="card-mrinalar-header">D-Marin Göcek</h2>
+                                            <div class="card-footer">Detaylar<i class="arrow-right"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <div class="parent-mrinalar">
+                                    <img class="w-100" src="./images/yart7.png">
+                                    <div class="card mrinalar-card">
+                                        <div class="card-body body-mrinal p-3">
+                                            <h2 class="card-mrinalar-header">D-Marin Didim</h2>
+                                            <div class="card-footer">Detaylar<i class="arrow-right"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="header-mrinalar hd-blog pt-4">Blog</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="parent-blog">
+                        <img class="child-yart8-img" src="./images/yart8.png">
+                        <div class="card blog-card p-4">
+                            <h4 class="card-blog-header">NEDEN TEAK AĞACI?</h4>
+                            <p class="card-blog-paragh-section">Yat veya tekne güverteniz
+                                için muhteşem, güçlü ve
+                                uzun ömürlü bir ahşap
+                                arıyorsanız, Burmese Teak
+                                en iyi seçimdir.</p>
+
+                            <p class="card-blog-paragh-section">Dünyada mevcut olan en iyi ve
+                                en kaliteli teak olarak kabul
+                                edilen Burmese Teak, lüks,
+                                dayanıklı ve güzel bir tekne
+                                güvertesi için gereken tüm
+                                niteliklere sahiptir.</p>
+                            <div class="card-footer blog-ftr pt-4 pl-0">Devamını oku<i class="arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="parent-blog">
+                        <img class="child-yart8-img" src="./images/yart9.png">
+                        <div class="card blog-card p-4">
+                            <h4 class="card-blog-header">TEKNENİZİ YAZA HAZIRLAYIN</h4>
+                            <p class="card-blog-paragh-section">Tekne bakımının püf noktaları!
+                                Birkaç adımda teknenizi yaza
+                                hazırlayın!</p>
+                            <p class="card-blog-paragh-section">
+                                Sizin, arkadaşlarınızın ve
+                                ailenizin denizde güvenliğini
+                                sağlamak için teknenizde
+                                düzenli bir bakım ve servis
+                                programı uyguluyor musunuz?
+                            </p>
+                            <div class="card-footer blog-ftr pt-4 pl-0">Devamını oku<i class="arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary blog-btn px-5 d-block mx-auto">Tümünü Gör</button>
+        </div>
+    </div>
+
+    <div class="container-fluid Ortaklarımız">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="header-mrinalar hd-blog pt-4">İş Ortaklarımız</h2>
+            </div>
+        </div>
+
+        <div id="OrtaklarımızCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators Ortaklarımız">
+                <li data-target="#OrtaklarımızCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#OrtaklarımızCarousel" data-slide-to="1"></li>
+                <li data-target="#OrtaklarımızCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row mx-auto py-4">
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar1.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar2.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar5.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar7.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar9.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar5.png">
+                        </div>
+                    </div>
+                    <div class="row mx-auto py-4">
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar2.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar4.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar6.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar8.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar10.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar2.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row mx-auto py-4">
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar1.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar2.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar5.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar7.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar9.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar5.png">
+                        </div>
+                    </div>
+                    <div class="row mx-auto py-4">
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar2.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar4.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar6.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar8.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar10.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar2.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row mx-auto py-4">
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar1.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar2.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar5.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar7.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar9.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar5.png">
+                        </div>
+                    </div>
+                    <div class="row mx-auto py-4">
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar2.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar4.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar6.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar8.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar10.png">
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="solar-img" src="./images/sorlar2.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container pt-5">
+            <div class="row pt-2">
+                <div class="col-12">
+                    <h2 class="header-mrinalar hd-blog pt-4">Deniz Tatiliniz Asla Yarıda Kalmasın</h2>
+                    <h5 class="subheader-mrinalar Ortaklarımız">Teknende her zaman konforlu ve doğru bir tercihtir.</h5>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <img class="yart10-img" src="./images/yart10.png">
+
+                    <div class="large-paragh">
+                        <h4 class="header-Ortaklarımız mb-4">Teknenizdeki Hiçbir Problem Sizi Üzmesin</h4>
+                        <p class="paragh-Ortaklarımız">Aileniz, çocuklarınız ve en iyi dostlarınız ile keyifli bir tatil
+                            için yat ile yolculuğa çıkarken, öncelikle muhtelif tüm bakımların yapılmış olması ve
+                            profesyonel bir kontrol
+                            gerçekleştirilmiş olması gerekir. Bu konuda kalitesiz yapılmış bakımlar ve üstünkörü
+                            gerçekleştirilen hizmetler sizi yarı yolda bırakabilir ve çok can sıkıcı olabilir. Bu
+                            nedenle tekne bakım ve kontrol için mutlaka tam profesyonel bir hizmet almanız önemlidir.
+                        </p>
+                        <p class="paragh-Ortaklarımız">Teknende olarak çıkacağınız bu yolculuklar için size birçok
+                            farklı noktada profesyonel bir hizmet sağlayabiliyoruz. Örneğin, teknenizin yolculuk
+                            öncesinde ihtiyacı olacak yat
+                            temizliğinden yat elektrik-elektronik bakım hizmetlerine ve dizel motor bakımından tekne
+                            boya işlemlerine kadar her hizmeti teknende.com üzerinden talep edebilirsiniz.</p>
+                        <div class="card-footer detaylar">Detaylar<i class="arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid mobile">
+        <div class="container">
+            <div class="row row-mobile">
+                <div class="col-lg-6 mobile1-col">
+                    <p class=" paragh-mobile p2">Mobile Özel Kampanyalar Artık TEKNENDE!</p>
+                    <p class="paragh-mobile">IOS veya Android akıllı telefondan
+                        teknende uygulamasını kolayca indir.
+                        Teknen için ihtiyaç duyduğun hizmet ve
+                        ürün artık TEKNENDE.</p>
+                </div>
+                <div class="col-lg-6 mobile2-col">
+                    <img class="mobile1-img" src="./images/mobile1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <div class="container">
+            <footer>
+                <div class="row pt-5">
+                    <div class="col-md-3">
+                        <img class="logo-dark-img" src="./images/logodark.png">
+                        <div class="footer-icons p-3">
+                            <img class="icons-ft mx-1" src="./images/fb.svg">
+                            <img class="icons-ft mx-1" src="./images/twiter.svg">
+                            <img class="icons-ft mx-1" src="./images/in.svg">
+                            <img class="icons-ft mx-1" src="./images/insta.svg">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="header-footer">TEKNENDE</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a>Hakkımızda</a>
+                            </li>
+                            <li>
+                                <a>Kampanyalar</a>
+                            </li>
+                            <li>
+                                <a>Marinalar</a>
+                            </li>
+                            <li>
+                                <a>Blog</a>
+                            </li>
+                            <li>
+                                <a>İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="header-footer">KURUMSAL</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a>Kişisel Veri Politikası</a>
+                            </li>
+                            <li>
+                                <a>Kullanıcı Sözleşmesi</a>
+                            </li>
+                            <li>
+                                <a>İade İptal Koşulları</a>
+                            </li>
+                            <li>
+                                <a>Çerez Politikası</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="header-footer">ÇÖZÜM ORTAĞIMIZ OLUN</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a>Hizmet Teknende Üyesi Ol</a>
+                            </li>
+                            <li>
+                                <a>Siparişin Teknende Üyesi Ol</a>
+                            </li>
+                            <li>
+                                <a>Yemek Teknende Üyesi Ol</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-hr"></div>
+                <div class="footer-section py-3">
+                    <section>
+                        <a class="text-dark">© 2022 Teknende.com | Tüm Hakları Gizlidir</a>
+                        <div class="iconHere">
+                            <img src="./images/visa.svg">
+                            <img src="./images/troy.svg">
+                            <img src="./images/card.svg">
+                            <img src="./images/Amex.svg">
+                        </div>
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
